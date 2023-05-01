@@ -1,47 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cluster 2 - X Academy</title>
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body style="margin: 0;">
-    <div id="navbar" style="display: flex; border-bottom: 1px solid gray; padding: 14px 800px; justify-content: space-between;">
-        <div id="navbar-left">
-            <img src="technology-with-purpose.svg">
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/styles.css" />
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/16c0af3568.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body style="margin: 0">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__left">
+          <img src="./assets/technology-with-purpose.svg" alt="logo" />
         </div>
-        <div id="navbar-right" style="display: flex; align-items: center;">
-            <p>Nosotros</p>
-            <p>Programas</p>
-            <p>Capacitaciones</p>
-            <p>Alianzas</p>
-            <p>Contacto</p>
-            <button>Sumate +</button>
+        <div class="header__right">
+          <div class="header__right__mobile">
+            <button class="search__btn">
+              <img src="./assets/magnifying-glass.png" />
+            </button>
+            <button class="hamburguer__menu__container" onclick="toggleIcon()">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </button>
+          </div>
+          <div class="header__items__desktop">
+            <ul>
+              <li><a href="">Nosotros</a></li>
+              <li><a href="">Programas</a></li>
+              <li><a href="">Capacitaciones</a></li>
+              <li><a href="">Alianzas</a></li>
+              <li><a href="">Contacto</a></li>
+              <li><button>Sumate +</button></li>
+              <!-- <li><a href="">Sumate +</a></li> -->
+              <li>
+                <a href=""><img src="./assets/instagram.png" /></a>
+              </li>
+              <li>
+                <a href=""><img src="./assets/linkedin.png" /></a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
-    <div id="contact-form">
-        <form style="margin: 0 300px;" action="">
+        <div class="header__items__mobile">
+          <ul>
+            <li><a href="">Nosotros</a></li>
+            <li><a href="">Programas</a></li>
+            <li><a href="">Capacitaciones</a></li>
+            <li><a href="">Alianzas</a></li>
+            <li><a href="">Contacto</a></li>
+            <li><a href="">Sumate +</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Linkedin</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="about">
+        <div class="about__container">
+          <div class="about__text">
+            <h1>
+              Somos una Fundación dedicada a mejorar la calidad de vida de las
+              personas y su entorno, a través de la tecnología.
+            </h1>
+          </div>
+          <div class="about__btn">
+            <button class="blackBtn">Contactanos -></button>
+            <button class="violetBtn">Sumate +</button>
+          </div>
+        </div>
+      </section>
+      <section class="impact">
+        <div class="impact__container">
+          <div class="text__content">
+            <h2>. Impacto</h2>
+            <p>
+              Buscamos construir alianzas y fortalecer vínculos para generar una
+              transformación real en la comunidad. Trabajamos para acercar la
+              tecnología innovadora y disruptiva del sector privado hacia el
+              sector social.
+            </p>
+          </div>
+          <div class="numbers__content">
             <div>
-                <input type="text" placeholder="Nombre y Apellido">
-                <input type="email" placeholder="Email">
-                <select name="" id="">
-                    <option value="">Programas</option>
-                    <option value="">Capacitaciones</option>
-                </select>
+              <p>58</p>
+              <span>Localidades</span>
+            </div>
+            <div
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <div style="display: flex; align-items: center">
+                <p>+</p>
+                <p>50</p>
+              </div>
+              <span>Mentores</span>
             </div>
             <div>
-                <textarea name="" cols="30" rows="10"></textarea>
+              <p>301</p>
+              <span>Participantes</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="picture">
+        <div class="picture__image"></div>
+      </section>
+      <section class="programs">
+        <div class="programs__container">
+          <h2>. Programas</h2>
+          <div class="box">
+            <div class="box__photo">
+              <img src="./assets/xacademy-01-1200x800.jpg" />
+            </div>
+            <div class="box__content">
+              <img src="./assets/xacademy.svg" />
+              <p>
+                xAcademy es un programa de formación en tecnología llevado
+                adelante por la Fundación Tecnología con Propósito junto a
+                Santex que busca promover un cambio positivo en la comunidad a
+                través de la educación en IT, apuntando a lograr la inserción
+                laboral de personas en el mundo tecnológico.
+              </p>
+              <button class="blackBtn">Más info -></button>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box__content">
+              <h4>Robótica educativa: la tecnología del futuro</h4>
+              <p>
+                Durante el curso, los alumnos y alumnas a través de la robótica
+                desarrollan la curiosidad, el autodidactismo y las habilidades
+                blandas necesarias para afrontar la revolución tecnológica del
+                siglo XXI.
+              </p>
+              <button class="blackBtn">Más info -></button>
+            </div>
+            <div class="box__photo">
+              <img src="./assets/robotica-educativa-07-1200x800.jpg" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="trainings">
+        <div class="programs__container">
+          <h2>. Capacitationes</h2>
+          <div class="box">
+            <div class="box__photo">
+              <img src="./assets/estafas-virtuales-04-1200x905.jpg" />
+            </div>
+            <div class="box__content">
+              <h4>Estafas virtuales: ¿cómo protegernos?</h4>
+              <p>
+                Los canales de comunicación a través de medios digitales
+                cobraron gran protagonismo a partir de la pandemia. Al mismo
+                tiempo, se perfeccionan cada vez más rápido las modalidades de
+                estafas y fraudes virtuales. En esta capacitación vas a aprender
+                diferentes tips y consejos útiles para navegar de manera más
+                segura.
+              </p>
+              <button class="blackBtn">Más info -></button>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box__content">
+              <h4>Seguridad informática para infancias</h4>
+              <p>
+                ¿Navegamos seguros en internet? La propuesta es una charla para
+                niños y niñas donde se brindan herramientas de seguridad y
+                autocuidado digital.
+              </p>
+              <button class="blackBtn">Más info -></button>
+            </div>
+            <div class="box__photo">
+              <img
+                src="./assets/seguridad-informatica-para-infancias-1200x797.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="team">
+        <div class="team__container">
+          <h2>. Equipo</h2>
+          <div class="team__cards__flex__container">
+            <div class="team__cards">
+              <div class="card__photo">
+                <img src="./assets/twp-juan.png" alt="img" />
+              </div>
+              <div class="card__content">
+                <h5>Juan Santiago</h5>
+                <p>Presidente</p>
+                <a href=""><img src="./assets/linkedin.png" /></a>
+              </div>
+            </div>
+            <div class="team__cards">
+              <div class="card__photo">
+                <img src="./assets/twp-walter.png" alt="img" />
+              </div>
+              <div class="card__content">
+                <h5>Walter Abrigo</h5>
+                <p>Secretario</p>
+                <a href=""><img src="./assets/linkedin.png" /></a>
+              </div>
+            </div>
+            <div class="team__cards">
+              <div class="card__photo">
+                <img src="./assets/twp-gabriela.png" alt="img" />
+              </div>
+              <div class="card__content">
+                <h5>Gabriela Fernandez</h5>
+                <p>Tesorera</p>
+                <a href=""><img src="./assets/linkedin.png" /></a>
+              </div>
+            </div>
+            <div class="team__cards">
+              <div class="card__photo">
+                <img src="./assets/twp-gabriel.png" alt="img" />
+              </div>
+              <div class="card__content">
+                <h5>Gabriel Dubini</h5>
+                <p>Tesorero</p>
+                <a href=""><img src="./assets/linkedin.png" /></a>
+              </div>
+            </div>
+            <div class="team__cards">
+              <div class="card__photo">
+                <img src="./assets/twp-florencia.png" alt="img" />
+              </div>
+              <div class="card__content">
+                <h5>Florenci D'Agostino</h5>
+                <p>Dirección Ejecutivo</p>
+                <a href=""><img src="./assets/linkedin.png" /></a>
+              </div>
+            </div>
+            <div class="team__cards">
+              <div class="card__photo">
+                <img src="./assets/twp-celeste.png" alt="img" />
+              </div>
+              <div class="card__content">
+                <h5>Celeste Torresi</h5>
+                <p>Comisión Directiva</p>
+                <a href=""><img src="./assets/linkedin.png" /></a>
+              </div>
+            </div>
+            <div class="team__cards">
+              <div class="card__photo">
+                <img src="./assets/twp-lucia.png" alt="img" />
+              </div>
+              <div class="card__content">
+                <h5>Lucia Jaimez</h5>
+                <p>Directora xAcademy</p>
+                <a href=""><img src="./assets/linkedin.png" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aliances">
+        <div class="aliances__container">
+          <h2>. Alianzas</h2>
+          <div class="carousel__container">
+            <div class="wrapper">
+              <i
+                id="left"
+                class="fa fa-light fa-angle-left"
+                style="color: #ffffff"
+              ></i>
+              <div class="carousel">
+                <img
+                  src="./assets/alianza-grupo-inteligencia-educativa.png"
+                  alt=""
+                  draggable="false"
+                />
+                <img
+                  src="./assets/alianza-jesus-maria.png"
+                  alt=""
+                  draggable="false"
+                />
+                <img
+                  src="./assets/alianza-municipalidad-concordia.png"
+                  alt=""
+                  draggable="false"
+                />
+                <img
+                  src="./assets/alianza-municipalidad-morteros-1 (1).png"
+                  alt=""
+                  draggable="false"
+                />
+                <img
+                  src="./assets/alianza-naranja.png"
+                  alt=""
+                  draggable="false"
+                />
+                <img
+                  src="./assets/alianza-santex.png"
+                  alt=""
+                  draggable="false"
+                />
+                <img
+                  src="./assets/alianza-banco-galicia.png"
+                  alt=""
+                  draggable="false"
+                />
+                <img
+                  src="./assets/alianza-banco-alimentos-cordoba.png"
+                  alt=""
+                  draggable="false"
+                />
+                <img
+                  src="./assets/alianza-fundacion-scrum.png"
+                  alt=""
+                  draggable="false"
+                />
+              </div>
+              <i
+                id="right"
+                class="fa fa-light fa-angle-right"
+                style="color: #ffffff"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer__container">
+          <div class="logo">
+            <img src="./assets/technology-with-purpose-white.svg" />
+          </div>
+          <div class="text">
+            <p>
+              Trabajamos para acercar la tecnología innovadora y disruptiva del
+              sector privado hacia el sector social.
+            </p>
+          </div>
+          <div class="footer__right">
+            <div>
+              <a href="">NOSOTROS</a>
+              <a href="">CONTACTO</a>
             </div>
             <div>
-                <button>Enviar</button>
+              <a href="">PROGRAMAS</a>
+              <a href="">CAPACITACIONES</a>
             </div>
-        </form>
-    </div>
-</body>
+            <div>
+              <a class="social__networks" href="">
+                <img />
+                <p>INSTAGRAM</p>
+              </a>
+              <a class="social__networks" href="">
+                <img />
+                <p>LINKEDIN</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./js/app.js"></script>
+  </body>
 </html>
